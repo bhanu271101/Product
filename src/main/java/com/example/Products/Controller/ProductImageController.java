@@ -55,7 +55,7 @@ public class ProductImageController {
                     Map<String, Object> map = new HashMap<>();
                     map.put("id", image.getId());
                     // You can include a URL that will allow Postman to fetch the image by ID
-                    map.put("imageUrl", "http://localhost:8086/images/" + image.getId());
+                    map.put("imageUrl", "https://product-0gme.onrender.com/images/" + image.getId());
                     return map;
                 })
                 .collect(Collectors.toList());
