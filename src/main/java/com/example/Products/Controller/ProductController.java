@@ -44,6 +44,13 @@ public class ProductController {
         return productService.getProductById(mobileId);
     }
 
+
+     @GetMapping("/cronjob")
+    public String dummyForCronjob()
+    {
+        return "Cronjob ran successfully";
+    }
+
     @GetMapping("/getAllProducts")
     public List<Product> getAllProducts()
     {
